@@ -262,13 +262,13 @@ input:focus {
   border-radius: 3px;
 
   display: grid;
-  grid-template-columns: (7, 1fr);
+  grid-template-columns: (6, 1fr);
   grid-auto-rows: 50px;
 }
 
 .table-title {
   grid-column-start: 1;
-  grid-column-end: 8;
+  grid-column-end: 7;
 
   display: flex;
   justify-content: center;
@@ -309,6 +309,8 @@ input:focus {
 
 .linea {
   border-radius: 7em;
+  margin-right: 2em;
+  margin-left: 0em;
 }
 
 .citadx {
@@ -329,6 +331,39 @@ input:focus {
 
 .contactar {
   background: var(--contactar);
+}
+
+/*PAGINACION*/
+.paginacion {
+  margin: 1em 0;
+}
+
+.paginacion ul {
+  list-style: none;
+  text-align: center;
+}
+
+.paginacion ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.paginacion ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--blanco1);
+  background: var(--gris2);
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+  color: var(--blanco0);
+  background: var(--negro1);
+}
+
+.paginacion ul li .active {
+  background: var(--gris1);
 }
 
 /* LARGE SIZE */

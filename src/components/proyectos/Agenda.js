@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Barra from "../layout/Barra";
+import Paginado from "../layout/Paginado";
 import Tabla from "../layout/Tabla";
 
 function Agenda() {
@@ -7,6 +8,7 @@ function Agenda() {
     <Fragment>
       <Barra />
       <Tabla />
+      <Paginado />
     </Fragment>
   );
 }
