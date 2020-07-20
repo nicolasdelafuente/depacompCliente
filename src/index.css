@@ -366,6 +366,30 @@ input:focus {
   background: var(--gris1);
 }
 
+/*BARRA ESTADO*/
+.barraEstado {
+  width: 100%;
+  border-radius: 0 0 3p 3px;
+  background: var(--citadx);
+}
+
+/* PERSONA*/
+
+.back-persona {
+  padding: 1em;
+  border-radius: 7px;
+  /*background: var(--blanco1);*/
+  background: var(--blanco1);
+}
+
+.grid-per {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  width: 100%;
+  border-radius: 7px;
+  background: var(--gris3);
+}
+
 /* LARGE SIZE */
 @media (min-width: 700px) {
   body {
