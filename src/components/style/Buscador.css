@@ -1,0 +1,83 @@
+:root {
+  --negro0: #111111;
+  --negro1: #333333;
+  --gris0: #444444;
+  --gris1: #909090;
+  --gris2: #c4c4c4;
+  --gris3: #dedede;
+  --gris4: #e2e2e2;
+  --gris5: #e6e6e6;
+  --gris6: #f3f3f3;
+  --blanco0: #ffffff;
+  --blanco1: #fafafa;
+
+  /*Estados*/
+  --citadx: rgba(86, 204, 242, 0.7);
+  --enProceso: rgba(39, 174, 96, 0.7);
+  --sinEstado: rgba(189, 189, 189, 0.7);
+  --contactar: rgba(242, 201, 76, 0.7);
+  --esperaDeRespuesta: rgba(235, 87, 87, 0.7);
+
+  --textFont: "Poppins", sans-serif;
+}
+
+.buscador {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.contenedor-buscador {
+  background: var(--blanco0);
+  display: inline-block;
+  padding: 0 0 0 40px;
+  border-radius: 5px;
+}
+
+.contenedor-buscador input,
+.btn-buscador {
+  width: 150;
+  height: 30px;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.contenedor-buscador input {
+  border: none;
+  color: var(--gris0);
+  z-index: 2;
+}
+
+.contenedor-buscador .btn-buscador {
+  font-size: 1.4em;
+  width: 50px;
+  border: none;
+  background: var(--negro1);
+  transform: translate(-55px, 0);
+  transition-duration: 0.3s;
+}
+
+.contenedor-buscador .fa-search {
+  color: var(--gris2);
+  transform: translate(-127px, 0);
+  transition: all 0.1 ease-in-out;
+}
+
+.contenedor-buscador input:focus {
+  outline: none;
+}
+
+.contenedor-buscador input:focus + .btn-buscador {
+  transform: translate(0, 0);
+  transition-duration: 0.3s;
+  background: var(--negro0);
+}
+
+.contenedor-buscador input:focus + .btn-buscador .fa-search {
+  color: var(--blanco1);
+  transform: translate(0, 0);
+  transition-duration: 0.4s;
+}
+
+.fa-search:hover {
+  font-size: 1.04em;
+}

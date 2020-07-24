@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import BtnLogin from "../layout/BtnLogin";
 import logo from "../images/logoUnahur.jpg";
+import "../style/Login.css";
 
 const Login = () => {
   //State para iniciar sesion
@@ -62,11 +64,7 @@ const Login = () => {
               />
             </div>
             <div>
-              <input
-                type="submit"
-                className="btn btn-primario btn-block"
-                value="Iniciar Sesión"
-              />
+              <BtnLogin />
             </div>
           </form>
         </div>

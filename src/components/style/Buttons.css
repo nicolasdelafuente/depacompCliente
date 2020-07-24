@@ -1,0 +1,54 @@
+:root {
+  --negro0: #111111;
+  --negro1: #333333;
+  --gris0: #444444;
+  --gris1: #909090;
+  --gris2: #c4c4c4;
+  --gris3: #dedede;
+  --gris4: #e2e2e2;
+  --gris5: #e6e6e6;
+  --gris6: #f3f3f3;
+  --blanco0: #ffffff;
+  --blanco1: #fafafa;
+
+  /*Estados*/
+  --citadx: rgba(86, 204, 242, 0.7);
+  --enProceso: rgba(39, 174, 96, 0.7);
+  --sinEstado: rgba(189, 189, 189, 0.7);
+  --contactar: rgba(242, 201, 76, 0.7);
+  --esperaDeRespuesta: rgba(235, 87, 87, 0.7);
+
+  --textFont: "Poppins", sans-serif;
+}
+.btn {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: var(--gris0);
+  color: var(--blanco1);
+  border: none;
+
+  font-family: var(--textFont);
+  font-style: normal;
+  font-weight: bold;
+}
+
+.btn-m {
+  width: 146px;
+  height: 44px;
+  font-size: 1em;
+}
+.btn-s {
+  width: 118px;
+  height: 48px;
+  font-size: 0.6em;
+}
+.btn-xs {
+  width: 84px;
+  height: 32px;
+  font-size: 0.5em;
+}
+
+.btn:hover {
+  background: var(--negro0);
+  color: var(--blanco0);
+}

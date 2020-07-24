@@ -1,0 +1,80 @@
+:root {
+  --negro0: #111111;
+  --negro1: #333333;
+  --gris0: #444444;
+  --gris1: #909090;
+  --gris2: #c4c4c4;
+  --gris3: #dedede;
+  --gris4: #e2e2e2;
+  --gris5: #e6e6e6;
+  --gris6: #f3f3f3;
+  --blanco0: #ffffff;
+  --blanco1: #fafafa;
+
+  /*Estados*/
+  --citadx: rgba(86, 204, 242, 0.7);
+  --enProceso: rgba(39, 174, 96, 0.7);
+  --sinEstado: rgba(189, 189, 189, 0.7);
+  --contactar: rgba(242, 201, 76, 0.7);
+  --esperaDeRespuesta: rgba(235, 87, 87, 0.7);
+
+  --textFont: "Poppins", sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 15% 25% 50% 5% 5%;
+  font: 16px var(--textFont);
+  width: 100%;
+  height: 4em;
+  background: var(--negro1);
+  border-radius: 3px;
+}
+
+.header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  width: 90%;
+}
+
+.body .wrapper {
+  background: var(--blanco1);
+}
+
+/*IMAGEN REDONDA*/
+
+.imgRedonda {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid var(--blanco0);
+}
+
+.imgRedonda:hover {
+  width: 33px;
+  height: 33px;
+  border: 1.5px solid var(--blanco1);
+}
+
+/* LOGOUT */
+.logout {
+  background: none;
+  color: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.fa-sign-out-alt {
+  color: var(--blanco1);
+  font-size: 1.4em;
+}
+
+.fa-sign-out-alt:hover {
+  color: var(--blanco0);
+  font-size: 1.6em;
+}

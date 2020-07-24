@@ -1,0 +1,44 @@
+.back-persona {
+  display: grid;
+  padding: 0.5em;
+  border-radius: 7px;
+  /*background: var(--blanco1);*/
+  background: var(--blanco1);
+}
+
+.grid-per {
+  display: grid;
+  grid-template-columns: 35% 12.5% 12.5% 30% 10%;
+  align-self: center;
+
+  align-items: center;
+  font-size: calc(0.5em + 1vh);
+
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 7px;
+  background: var(--gris6);
+}
+
+.nested-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: auto;
+}
+
+.nested-grid h5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.nested-grid h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-left: 0.3px solid var(--gris0);
+  padding-left: 1em;
+  justify-items: end;
+}
