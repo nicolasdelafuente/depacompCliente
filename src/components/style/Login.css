@@ -120,9 +120,9 @@
     padding-bottom: 1em;
     padding-right: 1em;
     width: 35%;
-    height: 45%;
+    height: 40%;
     right: 50%;
-    top: 22.5%;
+    top: 23.5%;
   }
   .logo-info h1 {
     font-size: 3em;
@@ -142,9 +142,9 @@
   .login-form {
     position: absolute;
     width: 35%;
-    height: 50%;
+    height: 35%;
     left: 50%;
     top: 20%;
-    padding-top: 5%;
+    padding-top: 10%;
   }
 }

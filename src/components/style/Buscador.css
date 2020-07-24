@@ -58,7 +58,7 @@
 
 .contenedor-buscador .fa-search {
   color: var(--gris2);
-  transform: translate(-127px, 0);
+  transform: translate(-140px, 0);
   transition: all 0.1 ease-in-out;
 }
 
