@@ -1,10 +1,11 @@
 import React from "react";
-import TablaCelda from "../layout/TablaCelda";
+import TablaFila from "../layout/TablaFila";
 
 const ObtenerSeguimiento = ({ seguimientos }) => (
   <div>
     {seguimientos.map((seguimiento) => (
-      <TablaCelda
+      <TablaFila
+        key={seguimiento.id}
         seguimiento={seguimiento.seguimiento}
         entrevista={seguimiento.entrevista}
         nombre={seguimiento.nombre}

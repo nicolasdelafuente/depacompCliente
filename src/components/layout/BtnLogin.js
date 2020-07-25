@@ -6,7 +6,7 @@ const BtnLogin = () => (
   <Link to="/entrevistas">
     <input
       type="submit"
-      className="btn btn-primario btn-block"
+      className="btn btn-login btn-block"
       value="Iniciar Sesión"
     />
   </Link>

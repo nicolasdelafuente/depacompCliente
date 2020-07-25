@@ -7,7 +7,7 @@ const Buscador = () => {
       <div className="contenedor-buscador">
         <input type="search" placeholder="DNI o Seguimiento" />
         <button className="btn-buscador" type="submit">
-          <i class="fa fa-search"></i>
+          <i className="fa fa-search"></i>
         </button>
       </div>
     </div>

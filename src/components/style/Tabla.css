@@ -34,6 +34,7 @@
 
 .container:hover {
   background: rgba(222, 222, 222, 0.5);
+  cursor: pointer;
 }
 
 .celda,

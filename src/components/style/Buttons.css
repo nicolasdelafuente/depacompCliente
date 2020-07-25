@@ -42,13 +42,37 @@
   height: 48px;
   font-size: 0.6em;
 }
+
 .btn-xs {
   width: 84px;
   height: 32px;
   font-size: 0.5em;
+  text-decoration: none;
 }
 
 .btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-login {
+  background-color: var(--gris1);
+  color: var(--blanco1);
+  text-transform: uppercase;
+  height: 2.5rem;
+  font-family: var(--textFont);
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
   background: var(--negro0);
   color: var(--blanco0);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
 }

@@ -1,7 +1,11 @@
 import React from "react";
 import "../style/Tabla.css";
 
-class TablaCelda extends React.Component {
+class TablaFila extends React.Component {
+  handleClick() {
+    console.log("clicked");
+  }
+
   render() {
     const {
       seguimiento,
@@ -12,7 +16,7 @@ class TablaCelda extends React.Component {
       orientador,
     } = this.props;
     return (
-      <div className="container">
+      <div className="container enlace" onClick={this.handleClick}>
         <div
           className="celda estado"
           style={{ background: `${this.props.color}` }}
@@ -47,4 +51,4 @@ class TablaCelda extends React.Component {
   }
 }
 
-export default TablaCelda;
+export default TablaFila;
