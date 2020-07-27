@@ -1,15 +1,32 @@
 import React from "react";
-import ObtenerSeguimientos from "../function/ObtenerSeguimientos";
+import ObtenerSeguimientos from "../function/ObtenerSeguimientos.";
 import Navbar from "../layout/Navbar";
 import TablaEncabezado from "../layout/TablaEncabezado";
 import TablaTitulo from "../layout/TablaTitulo";
-import data from "../json/misEntrevistas.json";
 
 class MisEntrevistas extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { data };
+  state = {
+    data: [],
+  };
+
+  async componentDidMount() {
+    await this.fetchSeguimientos();
   }
+
+  fetchSeguimientos = async () => {
+    try {
+      let res = await fetch("http://localhost:4000/api/seguimientos/");
+
+      let data = await res.json();
+
+      this.setState({
+        data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   render() {
     return (
       <div>
