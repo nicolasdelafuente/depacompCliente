@@ -19,7 +19,7 @@ class MisEntrevistas extends React.Component {
       let data = await res.json(res);
 
       this.setState({
-        data,
+        data: [data],
       });
     } catch (error) {
       console.log(error);

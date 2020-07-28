@@ -7,14 +7,7 @@ class TablaFila extends React.Component {
   }
 
   render() {
-    const {
-      seguimiento,
-      entrevista,
-      nombre,
-      motivo,
-      estado,
-      orientador,
-    } = this.props;
+    const { id, fecha, nombre, motivo, estado, orientador } = this.props;
     return (
       <div className="container enlace" onClick={this.handleClick}>
         <div
@@ -25,11 +18,11 @@ class TablaFila extends React.Component {
         </div>
         <div className="celda">
           <div>
-            <p>{seguimiento}</p>
+            <p>{id}</p>
           </div>
         </div>
         <div className="celda">
-          <p>{entrevista}</p>
+          <p>{fecha}</p>
         </div>
         <div className="celda">
           <p>{nombre}</p>
