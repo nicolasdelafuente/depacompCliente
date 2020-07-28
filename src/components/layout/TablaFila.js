@@ -7,12 +7,12 @@ class TablaFila extends React.Component {
   }
 
   render() {
-    const { id, fecha, nombre, motivo, estado, orientador } = this.props;
+    const { id, fecha, name, motivo, estado, orientador } = this.props;
     return (
       <div className="container enlace" onClick={this.handleClick}>
         <div
           className="celda estado"
-          style={{ background: `${this.props.color}` }}
+          style={{ background: `${this.props.color_estado}` }}
         >
           &nbsp;
         </div>
@@ -25,14 +25,14 @@ class TablaFila extends React.Component {
           <p>{fecha}</p>
         </div>
         <div className="celda">
-          <p>{nombre}</p>
+          <p>{name}</p>
         </div>
         <div className="celda">
           <p>{motivo}</p>
         </div>
         <div
           className="celda estado"
-          style={{ background: `${this.props.color}` }}
+          style={{ background: `${this.props.color_estado}` }}
         >
           <p>{estado}</p>
         </div>
