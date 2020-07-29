@@ -15,13 +15,9 @@ class MisEntrevistas extends React.Component {
 
   fetchSeguimientos = async () => {
     try {
-      let res = await fetch("http://localhost:4000/api/seguimientos/");
-      let data = await res.json(res);
-      console.log(data);
-
-      this.setState({
-        data: [data],
-      });
+      fetch("http://localhost:4000/api/seguimientos/")
+        .then((res) => res.json())
+        .then((response) => this.setState(response));
     } catch (error) {
       console.log(error);
     }

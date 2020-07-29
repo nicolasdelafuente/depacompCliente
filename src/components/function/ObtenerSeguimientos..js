@@ -6,6 +6,7 @@ const ObtenerSeguimiento = ({ seguimientos }) => (
     {seguimientos.map((seguimiento) => (
       <TablaFila
         key={seguimiento.id}
+        id={seguimiento.id}
         fecha={seguimiento.fecha}
         name={seguimiento.name}
         motivo={seguimiento.motivo}
