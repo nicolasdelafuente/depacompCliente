@@ -4,6 +4,7 @@ import imagenHeader from "../images/grondona.jpg";
 import Buscador from "./Buscador";
 import "../style/Navbar.css";
 import "../style/Buttons.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -23,9 +24,11 @@ const Navbar = () => {
         <img src={imagenHeader} alt="Usuario" className="imgRedonda" />
       </div>
       <div>
-        <button className="logout" type="submit">
-          <i className="fas fa-sign-out-alt"></i>
-        </button>
+        <Link to="/">
+          <button className="logout btn" type="submit">
+            <i className="fas fa-sign-out-alt"></i>
+          </button>
+        </Link>
       </div>
     </header>
   );
