@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BtnLogin from "../layout/BtnLogin";
-import logo from "../images/logoUnahur.jpg";
+import logo from "../images/logoUnahur.png";
 import "../style/Login.css";
 
 const Login = () => {

@@ -1,16 +1,4 @@
 :root {
-  --negro0: #111111;
-  --negro1: #333333;
-  --gris0: #444444;
-  --gris1: #909090;
-  --gris2: #c4c4c4;
-  --gris3: #dedede;
-  --gris4: #e2e2e2;
-  --gris5: #e6e6e6;
-  --gris6: #f3f3f3;
-  --blanco0: #ffffff;
-  --blanco1: #fafafa;
-
   /*Estados*/
   --citadx: #56ccf2;
   --enProceso: #27ae60;

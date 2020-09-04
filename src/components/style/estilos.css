@@ -1,0 +1,49 @@
+:root {
+  --negro0: #111111;
+  --negro1: #333333;
+  --gris0: #444444;
+  --gris1: #909090;
+  --gris2: #c4c4c4;
+  --gris3: #dedede;
+  --gris4: #e2e2e2;
+  --gris5: #e6e6e6;
+  --gris6: #f3f3f3;
+  --blanco0: #ffffff;
+  --blanco1: #fafafa;
+
+  /*Estados*/
+  --citadx: rgba(86, 204, 242, 0.7);
+  --enProceso: rgba(39, 174, 96, 0.7);
+  --sinEstado: #bdbdbd;
+  --contactar: rgba(242, 201, 76, 0.7);
+  --esperaDeRespuesta: rgba(235, 87, 87, 0.7);
+
+  --textFont: "Poppins", sans-serif;
+}
+
+.border-estado {
+  border: none;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-top-left-radius: 50px;
+}
+
+.citadx {
+  border-left-color: var(--citadx);
+}
+
+.enProceso {
+  border-left-color: var(--enProceso);
+}
+
+.sinEstado {
+  border-left-color: var(--sinEstado);
+}
+
+.contactar {
+  border-left-color: var(--contactar);
+}
+
+.esperaDeRespuesta {
+  border-left-color: var(--esperaDeRespuesta);
+}
