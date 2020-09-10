@@ -1,16 +1,34 @@
 import React from "react";
+
+import Header from "./components/Header";
+import Entrevistas from "./components/Entrevistas";
+import NuevoSeguimiento from "./components/NuevoSeguimiento";
+import EditarSeguimiento from "./components/EditarSeguimiento";
+import Seguimientos from "./components/Seguimientos";
+
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Login from "./components/auth/Login";
-import Entrevistas from "./components/page/MisEntrevistas";
-import NotFound from "./components/page/NotFound";
+
+//Redux
+import { Provider } from "react-redux";
+import store from "./store";
 
 const App = () => (
   <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Login} />
-      <Route exact path="/entrevistas" component={Entrevistas} />
-      <Route component={NotFound} />
-    </Switch>
+    <Provider store={store}>
+      <Header />
+      <div className="container">
+        <Switch>
+          <Route exact path="/" component={Entrevistas} />
+          <Route exact path="/seguimiento/nuevo" component={NuevoSeguimiento} />
+          <Route
+            exact
+            path="/seguimiento/editar/:id"
+            component={EditarSeguimiento}
+          />
+          <Route exact path="/seguimientos" component={Seguimientos} />
+        </Switch>
+      </div>
+    </Provider>
   </BrowserRouter>
 );
 
