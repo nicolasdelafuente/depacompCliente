@@ -6,7 +6,7 @@ const SeguimientoFila = ({ seguimiento }) => {
     <tr>
       <td>{id}</td>
       <td>{fecha}</td>
-      <td>{name}></td>
+      <td>{name}</td>
       <td>{motivo}</td>
       <td>{estado}</td>
       <td>{orientador}</td>
