@@ -5,7 +5,6 @@ import {
 } from "../types";
 
 //Cada reducer tiene su propio state
-
 const initialState = {
   seguimientos: [],
   error: null,
@@ -25,7 +24,7 @@ export default function (state = initialState, action) {
         ...state,
         loading: false,
         error: null,
-        productos: action.payload,
+        seguimientos: action.payload,
       };
 
     case LISTAR_SEGUIMIENTOS_ERROR:

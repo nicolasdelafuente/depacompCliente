@@ -20,7 +20,7 @@ const Seguimientos = () => {
   return (
     <Fragment>
       <h2 className="text-center my-5">Seguimientos</h2>
-      <table className="table table-hover">
+      <table className="table table-hover text-center">
         <thead>
           <tr>
             <th scope="col">Seguimiento</th>
@@ -35,7 +35,10 @@ const Seguimientos = () => {
           {seguimientos.length === 0
             ? "No existen seguimientos"
             : seguimientos.map((seguimiento) => (
-                <SeguimientoFila key={seguimiento.id} producto={seguimiento} />
+                <SeguimientoFila
+                  key={seguimiento.id}
+                  seguimiento={seguimiento}
+                />
               ))}
         </tbody>
       </table>

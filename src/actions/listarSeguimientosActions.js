@@ -13,8 +13,7 @@ export function listarSeguimientosAction() {
     dispatch(listarSeguimientos());
     try {
       const respuesta = await seguimientoAxios.get("/seguimientos");
-      dispatch(listadoSeguimientosExito(respuesta.data));
-      console.log(respuesta.data.data);
+      dispatch(listadoSeguimientosExito(respuesta.data.data));
     } catch (error) {
       console.log(error);
       dispatch(listadoSeguimientosError());
