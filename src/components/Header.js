@@ -1,25 +1,20 @@
 import React from "react";
 import logo from "../images/logoUnahur.png";
-import { Link } from "react-router-dom";
-
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-contente-between p-0">
       <div className="container m-0">
         <span>
-          <Link to={"/"}>
-            {" "}
-            <a className="navbar-brand pr-5" href="!#">
-              <img
-                src={logo}
-                width="30"
-                height="30"
-                className="d-inline-block align-center"
-                alt="Logo Unahur"
-              />
-              Acompañamiento
-            </a>
-          </Link>
+          <a className="navbar-brand pr-5" href="/">
+            <img
+              src={logo}
+              width="30"
+              height="30"
+              className="d-inline-block align-center"
+              alt="Logo Unahur"
+            />
+            Acompañamiento
+          </a>
         </span>
         <button
           className="navbar-toggler"
@@ -36,7 +31,7 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="!#">
+              <a className="nav-link" href="/">
                 Entrevistas <span className="sr-only">(current)</span>
               </a>
             </li>
@@ -46,7 +41,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="!#">
+              <a className="nav-link" href="/seguimientos">
                 Seguimientos
               </a>
             </li>

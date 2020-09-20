@@ -1,4 +1,7 @@
 import {
+  CREAR_SEGUIMIENTO,
+  CREAR_SEGUIMIENTO_EXITO,
+  CREAR_SEGUIMIENTO_ERROR,
   LISTAR_SEGUIMIENTOS,
   LISTAR_SEGUIMIENTOS_EXITO,
   LISTAR_SEGUIMIENTOS_ERROR,
@@ -13,6 +16,27 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
+    //CREAR
+    case CREAR_SEGUIMIENTO:
+      return {
+        ...state,
+        loading: action.payload,
+      };
+
+    case CREAR_SEGUIMIENTO_EXITO:
+      return {
+        ...state,
+        loading: false,
+        productos: [...state.seguimientos, action.payload],
+      };
+
+    case CREAR_SEGUIMIENTO_ERROR:
+      return {
+        loading: false,
+        error: action.payload,
+      };
+
+    //LISTAR
     case LISTAR_SEGUIMIENTOS:
       return {
         ...state,
@@ -23,10 +47,9 @@ export default function (state = initialState, action) {
       return {
         ...state,
         loading: false,
-        error: null,
+        error: false,
         seguimientos: action.payload,
       };
-
     case LISTAR_SEGUIMIENTOS_ERROR:
       return {
         ...state,

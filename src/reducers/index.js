@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
-import listarSeguimientosReducer from "./listarSeguimientosReducer";
+
+import seguimientosReducer from "./seguimientosReducer";
 
 export default combineReducers({
-  seguimientos: listarSeguimientosReducer,
+  seguimientos: seguimientosReducer,
 });

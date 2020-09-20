@@ -19,10 +19,14 @@ const App = () => (
       <div className="container">
         <Switch>
           <Route exact path="/" component={Entrevistas} />
-          <Route exact path="/seguimiento/nuevo" component={NuevoSeguimiento} />
           <Route
             exact
-            path="/seguimiento/editar/:id"
+            path="/seguimientos/nuevo"
+            component={NuevoSeguimiento}
+          />
+          <Route
+            exact
+            path="/seguimientos/editar/:id"
             component={EditarSeguimiento}
           />
           <Route exact path="/seguimientos" component={Seguimientos} />
