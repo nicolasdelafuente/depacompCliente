@@ -1,8 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
+import { useDispatch } from "react-redux";
+import { obtenerSeguimientoAction } from "../actions/seguimientoActions";
 
 const SeguimientoFila = ({ seguimiento }) => {
   const { id, fecha, name, motivo, estado, orientador } = seguimiento;
+
+  const history = useHistory(); // Haboilitar history para redireccion.
+  const dispatch = useDispatch();
+
+  //funcion que redirige
+  const redireccionarSeguimiento = (seguimiento) => {
+    dispatch(obtenerSeguimientoAction(seguimiento));
+
+    history.push(`/seguimientos/${seguimiento.id}`);
+  };
 
   return (
     <tr>
@@ -13,9 +26,13 @@ const SeguimientoFila = ({ seguimiento }) => {
       <td>{estado}</td>
       <td>{orientador}</td>
       <td>
-        <Link to={`/seguimientos/${id}`} className="btn btn-outline-success">
+        <button
+          type="button"
+          onClick={() => redireccionarSeguimiento(seguimiento)}
+          className="btn btn-outline-success"
+        >
           Ver
-        </Link>
+        </button>
       </td>
     </tr>
   );

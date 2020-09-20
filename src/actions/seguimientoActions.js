@@ -5,9 +5,11 @@ import {
   LISTAR_SEGUIMIENTOS,
   LISTAR_SEGUIMIENTOS_EXITO,
   LISTAR_SEGUIMIENTOS_ERROR,
+  OBTENER_SEGUIMIENTO,
 } from "../types";
 
 import clienteAxios from "../config/axios";
+import seguimientosReducer from "../reducers/seguimientosReducer";
 
 // FUNCIÓN QUE CREA UN SEGUIMIENTO
 export function crearSeguimientoActions(seguimiento) {
@@ -73,4 +75,16 @@ const listaSeguimientosExito = (seguimientos) => ({
 const listaSeguimientosError = () => ({
   type: LISTAR_SEGUIMIENTOS_ERROR,
   payload: true,
+});
+
+// MOSTRAR UN SEGUIMIENTO
+export function obtenerSeguimientoAction(seguimiento) {
+  return (dispatch) => {
+    dispatch(obtenerSeguimiento(seguimiento));
+  };
+}
+
+const obtenerSeguimiento = (seguimiento) => ({
+  type: OBTENER_SEGUIMIENTO,
+  payload: seguimiento,
 });
