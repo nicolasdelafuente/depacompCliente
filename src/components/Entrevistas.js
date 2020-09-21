@@ -29,30 +29,31 @@ const Entrevistas = () => {
       ) : null}
 
       {cargando ? <p className="text-center">Cargando....</p> : null}
-
-      <table className="table table-hover text-center">
-        <thead className="thead-light">
-          <tr>
-            <th scope="col">Seguimiento</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Motivo</th>
-            <th scope="col">Estado</th>
-            <th scope="col">Orientador</th>
-            <th scope="col">Ver</th>
-          </tr>
-        </thead>
-        <tbody>
-          {seguimientos.length === 0
-            ? "No hay seguimientos"
-            : seguimientos.map((seguimiento) => (
-                <EntrevistaFila
-                  key={seguimiento.id}
-                  seguimiento={seguimiento}
-                />
-              ))}
-        </tbody>
-      </table>
+      <div className="table-responsive">
+        <table className="table table-hover text-center">
+          <thead className="thead-light">
+            <tr>
+              <th scope="col">Seguimiento</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Motivo</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Orientador</th>
+              <th scope="col">Ver</th>
+            </tr>
+          </thead>
+          <tbody>
+            {seguimientos.length === 0
+              ? "No hay seguimientos"
+              : seguimientos.map((seguimiento) => (
+                  <EntrevistaFila
+                    key={seguimiento.id}
+                    seguimiento={seguimiento}
+                  />
+                ))}
+          </tbody>
+        </table>
+      </div>
     </Fragment>
   );
 };
