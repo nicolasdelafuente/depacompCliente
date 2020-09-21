@@ -4,8 +4,8 @@ import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { obtenerSeguimientoAction } from "../actions/seguimientoActions";
 
-const SeguimientoFila = ({ seguimiento }) => {
-  const { id, name, motivo, estado, orientador } = seguimiento;
+const EntrevistaFila = ({ seguimiento }) => {
+  const { id, fecha, name, motivo, estado, orientador } = seguimiento;
 
   const history = useHistory(); // Haboilitar history para redireccion.
   const dispatch = useDispatch();
@@ -20,12 +20,12 @@ const SeguimientoFila = ({ seguimiento }) => {
   return (
     <tr>
       <td>{id}</td>
+      <td>{fecha}</td>
       <td>{name}</td>
       <td>{motivo}</td>
       <td>{estado}</td>
       <td>{orientador}</td>
       <td>
-        {" "}
         <button
           type="button"
           onClick={() => redireccionarSeguimiento(seguimiento)}
@@ -38,4 +38,4 @@ const SeguimientoFila = ({ seguimiento }) => {
   );
 };
 
-export default SeguimientoFila;
+export default EntrevistaFila;

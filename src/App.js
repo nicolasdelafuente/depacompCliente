@@ -2,7 +2,6 @@ import React from "react";
 
 import Header from "./components/Header";
 import Entrevistas from "./components/Entrevistas";
-import NuevoSeguimiento from "./components/NuevoSeguimiento";
 import Seguimiento from "./components/Seguimiento";
 import Seguimientos from "./components/Seguimientos";
 
@@ -16,14 +15,9 @@ const App = () => (
   <BrowserRouter>
     <Provider store={store}>
       <Header />
-      <div className="container">
+      <div className="container p-5">
         <Switch>
           <Route exact path="/" component={Entrevistas} />
-          <Route
-            exact
-            path="/seguimientos/nuevo"
-            component={NuevoSeguimiento}
-          />
           <Route exact path="/seguimientos/:id" component={Seguimiento} />
           <Route exact path="/seguimientos" component={Seguimientos} />
         </Switch>

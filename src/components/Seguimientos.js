@@ -30,14 +30,15 @@ const Seguimientos = () => {
 
       {cargando ? <p className="text-center">Cargando....</p> : null}
 
-      <table className="table table-striped text-center">
-        <thead className="bg-primary table-dark">
+      <table className="table table-hover text-center">
+        <thead className="thead-light">
           <tr>
             <th scope="col">Seguimiento</th>
             <th scope="col">Nombre</th>
             <th scope="col">Motivo</th>
             <th scope="col">Estado</th>
             <th scope="col">Orientador</th>
+            <th scope="col">Ver</th>
           </tr>
         </thead>
         <tbody>
