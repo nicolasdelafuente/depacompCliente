@@ -59,7 +59,7 @@ const Header = () => {
             Buscar
           </button>
         </form>
-        <div className="dropdown m-1 mt-2 mb-2">
+        <div className="dropdown m-1 mt-2 mb-2 mr-5 pr-5">
           <button
             className="btn btn-outline-secondary dropdown-toggle"
             type="button"
@@ -75,7 +75,7 @@ const Header = () => {
               Perfil
             </a>
             <a className="dropdown-item" href="!#">
-              Cerrar sesión{" "}
+              Cerrar sesión
             </a>
           </div>
         </div>

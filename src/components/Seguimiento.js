@@ -24,75 +24,75 @@ const Seguimiento = () => {
   } = seguimiento;
 
   return (
-    <div class="row">
-      <div class="col">
-        <div class="card mt-5 font-weight-bold">
-          <div class="card-header">
-            <div class="row justify-content-between">
+    <div className="row">
+      <div className="col">
+        <div className="card mt-5 font-weight-bold">
+          <div className="card-header">
+            <div className="row justify-content-between">
               <a
-                class="btn"
+                className="btn"
                 data-toggle="collapse"
                 href="#collapseExample"
                 role="button"
                 aria-expanded="false"
                 aria-controls="collapseExample"
               >
-                <div class="col-xs-9 p-0">
+                <div className="col-xs-9 p-0">
                   <h4>{name}</h4>
                 </div>
               </a>
-              <div class="col-xs-3 pl-4 pt-2 mr-3 text-right border-left border-secondary">
-                <i class="far fa-edit fa-lg"></i>
+              <div className="col-xs-3 pl-4 pt-2 mr-3 text-right border-left border-secondary">
+                <i className="far fa-edit fa-lg"></i>
               </div>
             </div>
           </div>
-          <div class="collapse" id="collapseExample">
-            <div class="card-body">
-              <div class="form-row justify-content-end">
-                <div class="form-group col-md-3">
-                  <label for="inputCity">Teléfono Móvil</label>
+          <div className="collapse" id="collapseExample">
+            <div className="card-body">
+              <div className="form-row justify-content-end">
+                <div className="form-group col-md-3">
+                  <label for="telefonoMovil">Teléfono Móvil</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="telefonoMovil"
                     value={color_estado}
                   />
                 </div>
-                <div class="form-group col-md-3">
-                  <label for="inputCity">Teléfono Fijo</label>
+                <div className="form-group col-md-3">
+                  <label for="telefonoFijo">Teléfono Fijo</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="telefonoFijo"
                     value={color_estado}
                   />
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="email">Email</label>
                   <input
                     type="email"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="email"
                     value={color_estado}
                   />
                 </div>
               </div>
 
-              <div class="form-row justify-content-end">
-                <div class="form-group col-md-3">
+              <div className="form-row justify-content-end">
+                <div className="form-group col-md-3">
                   <label for="">Nº Documento</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="documento"
                     value={color_estado}
                   />
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="">Carrerra</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="carrera"
                     value={color_estado}
                   />
@@ -102,32 +102,32 @@ const Seguimiento = () => {
           </div>
         </div>
 
-        <div class="card mt-5 font-weight-bold">
-          <div class="card-header">
-            <div class="row justify-content-between">
+        <div className="card mt-5 font-weight-bold">
+          <div className="card-header">
+            <div className="row justify-content-between">
               <a
-                class="btn"
+                className="btn"
                 data-toggle="collapse"
                 href="#collapseExample2"
                 role="button"
                 aria-expanded="false"
                 aria-controls="collapseExample2"
               >
-                <div class="col-xs-9 p-0">
+                <div className="col-xs-9 p-0">
                   <h4>Seguimiento {id}</h4>
                 </div>
               </a>
-              <div class="col-xs-3 pl-4 pt-2 mr-3 text-right border-left border-secondary">
-                <i class="far fa-edit fa-lg"></i>
+              <div className="col-xs-3 pl-4 pt-2 mr-3 text-right border-left border-secondary">
+                <i className="far fa-edit fa-lg"></i>
               </div>
             </div>
           </div>
-          <div class="collapse" id="collapseExample2">
-            <div class="card-body">
-              <div class="form-row justify-content-between">
-                <div class="form-group col-md-3">
+          <div className="collapse" id="collapseExample2">
+            <div className="card-body">
+              <div className="form-row justify-content-between">
+                <div className="form-group col-md-3">
                   <label for="">Estado</label>
-                  <select id="inputState" class="form-control border-0">
+                  <select id="inputState" className="form-control border-0">
                     <option selected>{estado}</option>
                     <option>Ausente</option>
                     <option>Citadx</option>
@@ -138,87 +138,87 @@ const Seguimiento = () => {
                     <option>Sin Asignar</option>
                   </select>
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="">Entrevista</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="i"
                     value="3"
                   />
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="">Próxima Entrevista</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id=""
                     value={fecha}
                   />
                 </div>
               </div>
-              <div class="form-row justify-content-end">
-                <div class="form-group col-md-3">
+              <div className="form-row justify-content-end">
+                <div className="form-group col-md-3">
                   <label for="">Motivo</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="i"
                     value={motivo}
                   />
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="">Tipo de seguimiento</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id=""
                     value={color_estado}
                   />
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="">Orientador</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="orientador"
                     value={orientador}
                   />
                 </div>
               </div>
-              <div class="form-row justify-content-end">
-                <div class="form-group col-md-3">
+              <div className="form-row justify-content-end">
+                <div className="form-group col-md-3">
                   <label for="">Derivación</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="derivacion"
                     value={color_estado}
                   />
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="">Nombre Derivador</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="nombreDerivador"
                     value={color_estado}
                   />
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="">Teléfono</label>
                   <input
                     type="text"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="telefonoDerivador"
                     value={color_estado}
                   />
                 </div>
-                <div class="form-group col-md-3">
+                <div className="form-group col-md-3">
                   <label for="email">Email</label>
                   <input
                     type="email"
-                    class="form-control border-0"
+                    className="form-control border-0"
                     id="mailDerivador"
                     value={color_estado}
                   />
@@ -228,12 +228,12 @@ const Seguimiento = () => {
           </div>
         </div>
 
-        <div class="card mt-5 font-weight-bold">
-          <div class="card-header mb-2">
+        <div className="card mt-5 font-weight-bold">
+          <div className="card-header mb-2">
             <h5>Motivo</h5>
           </div>
-          <div class="form-group ml-2 mr-2">
-            <textarea class="form-control" id="" rows="5">
+          <div className="form-group ml-2 mr-2">
+            <textarea className="form-control" id="" rows="5">
               Se retiró en 1991, dejando atrás 19 años como uno de los más
               grandes símbolos del fútbol a nivel mundial, en una carrera donde
               jugó 714 partidos, metió 108 goles y si bien no hay estadísticas
@@ -242,13 +242,13 @@ const Seguimiento = () => {
           </div>
         </div>
 
-        <div class="card mt-5 font-weight-bold">
-          <div class="card-header mb-2">
+        <div className="card mt-5 font-weight-bold">
+          <div className="card-header mb-2">
             <h5>Observaciones</h5>
           </div>
-          <div class="form-group ml-2 mr-2">
+          <div className="form-group ml-2 mr-2">
             <textarea
-              class="form-control"
+              className="form-control"
               id=""
               rows="5"
               placeholder="Ingrese observaciones ..."
@@ -256,13 +256,13 @@ const Seguimiento = () => {
           </div>
         </div>
 
-        <div class="card mt-5 font-weight-bold">
-          <div class="card-header mb-2">
+        <div className="card mt-5 font-weight-bold">
+          <div className="card-header mb-2">
             <h5>Acciones a implementar</h5>
           </div>
-          <div class="form-group ml-2 mr-2">
+          <div className="form-group ml-2 mr-2">
             <textarea
-              class="form-control"
+              className="form-control"
               id=""
               rows="5"
               placeholder="Ingrese acciones ..."
@@ -270,39 +270,39 @@ const Seguimiento = () => {
           </div>
         </div>
 
-        <div class="card mt-5 font-weight-bold">
-          <div class="card-header">
-            <i class="far fa-calendar-plus fa-2x"></i>
+        <div className="card mt-5 font-weight-bold">
+          <div className="card-header">
+            <i className="far fa-calendar-plus fa-2x"></i>
             <span>
               <h5>Agendar entrevista</h5>
             </span>
           </div>
         </div>
 
-        <div class="card text-white border-success mt-5 font-weight-bold">
-          <div class="card-header">
-            <div class="row justify-content-end">
-              <button type="button" class="btn btn-success mr-3">
+        <div className="card text-white border-success mt-5 font-weight-bold">
+          <div className="card-header">
+            <div className="row justify-content-end">
+              <button type="button" className="btn btn-success mr-3">
                 Guardar
               </button>
-              <button type="button" class="btn btn-outline-danger mr-2">
+              <button type="button" className="btn btn-outline-danger mr-2">
                 Cancelar
               </button>
             </div>
           </div>
         </div>
 
-        <div class="card mt-5">
-          <div class="card-header mb-2">
+        <div className="card mt-5">
+          <div className="card-header mb-2">
             <h5>Histórico</h5>
           </div>
-          <div class="form-group ml-2 mr-2">
+          <div className="form-group ml-2 mr-2">
             <div id="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
+              <div className="card">
+                <div className="card-header" id="headingOne">
+                  <h5 className="mb-0">
                     <button
-                      class="btn btn-link"
+                      className="btn btn-link"
                       data-toggle="collapse"
                       data-target="#collapseOne"
                       aria-expanded="true"
@@ -315,11 +315,11 @@ const Seguimiento = () => {
 
                 <div
                   id="collapseOne"
-                  class="collapse"
+                  className="collapse"
                   aria-labelledby="headingOne"
                   data-parent="#accordion"
                 >
-                  <div class="card-body">
+                  <div className="card-body">
                     Anim pariatur cliche reprehenderit, enim eiusmod high life
                     accusamus terry richardson ad squid. 3 wolf moon officia
                     aute, non cupidatat skateboard dolor brunch. Food truck
@@ -334,11 +334,11 @@ const Seguimiento = () => {
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
+              <div className="card">
+                <div className="card-header" id="headingTwo">
+                  <h5 className="mb-0">
                     <button
-                      class="btn btn-link collapsed"
+                      className="btn btn-link collapsed"
                       data-toggle="collapse"
                       data-target="#collapseTwo"
                       aria-expanded="false"
@@ -350,11 +350,11 @@ const Seguimiento = () => {
                 </div>
                 <div
                   id="collapseTwo"
-                  class="collapse"
+                  className="collapse"
                   aria-labelledby="headingTwo"
                   data-parent="#accordion"
                 >
-                  <div class="card-body">
+                  <div className="card-body">
                     Anim pariatur cliche reprehenderit, enim eiusmod high life
                     accusamus terry richardson ad squid. 3 wolf moon officia
                     aute, non cupidatat skateboard dolor brunch. Food truck
@@ -369,11 +369,11 @@ const Seguimiento = () => {
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
+              <div className="card">
+                <div className="card-header" id="headingThree">
+                  <h5 className="mb-0">
                     <button
-                      class="btn btn-link collapsed"
+                      className="btn btn-link collapsed"
                       data-toggle="collapse"
                       data-target="#collapseThree"
                       aria-expanded="false"
@@ -385,11 +385,11 @@ const Seguimiento = () => {
                 </div>
                 <div
                   id="collapseThree"
-                  class="collapse"
+                  className="collapse"
                   aria-labelledby="headingThree"
                   data-parent="#accordion"
                 >
-                  <div class="card-body">
+                  <div className="card-body">
                     Anim pariatur cliche reprehenderit, enim eiusmod high life
                     accusamus terry richardson ad squid. 3 wolf moon officia
                     aute, non cupidatat skateboard dolor brunch. Food truck
