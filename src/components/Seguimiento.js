@@ -50,7 +50,7 @@ const Seguimiento = () => {
             <div className="card-body">
               <div className="form-row justify-content-end">
                 <div className="form-group col-md-3">
-                  <label for="telefonoMovil">Teléfono Móvil</label>
+                  <label htmlFor="telefonoMovil">Teléfono Móvil</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -59,7 +59,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="telefonoFijo">Teléfono Fijo</label>
+                  <label htmlFor="telefonoFijo">Teléfono Fijo</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -68,7 +68,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="email">Email</label>
+                  <label htmlFor="email">Email</label>
                   <input
                     type="email"
                     className="form-control border-0"
@@ -80,7 +80,7 @@ const Seguimiento = () => {
 
               <div className="form-row justify-content-end">
                 <div className="form-group col-md-3">
-                  <label for="">Nº Documento</label>
+                  <label htmlFor="">Nº Documento</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -89,7 +89,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="">Carrerra</label>
+                  <label htmlFor="">Carrerra</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -126,7 +126,7 @@ const Seguimiento = () => {
             <div className="card-body">
               <div className="form-row justify-content-between">
                 <div className="form-group col-md-3">
-                  <label for="">Estado</label>
+                  <label htmlFor="">Estado</label>
                   <select id="inputState" className="form-control border-0">
                     <option selected>{estado}</option>
                     <option>Ausente</option>
@@ -139,7 +139,7 @@ const Seguimiento = () => {
                   </select>
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="">Entrevista</label>
+                  <label htmlFor="">Entrevista</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -148,7 +148,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="">Próxima Entrevista</label>
+                  <label htmlFor="">Próxima Entrevista</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -159,7 +159,7 @@ const Seguimiento = () => {
               </div>
               <div className="form-row justify-content-end">
                 <div className="form-group col-md-3">
-                  <label for="">Motivo</label>
+                  <label htmlFor="">Motivo</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -168,7 +168,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="">Tipo de seguimiento</label>
+                  <label htmlFor="">Tipo de seguimiento</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -177,7 +177,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="">Orientador</label>
+                  <label htmlFor="">Orientador</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -188,7 +188,7 @@ const Seguimiento = () => {
               </div>
               <div className="form-row justify-content-end">
                 <div className="form-group col-md-3">
-                  <label for="">Derivación</label>
+                  <label htmlFor="">Derivación</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -197,7 +197,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="">Nombre Derivador</label>
+                  <label htmlFor="">Nombre Derivador</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -206,7 +206,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="">Teléfono</label>
+                  <label htmlFor="">Teléfono</label>
                   <input
                     type="text"
                     className="form-control border-0"
@@ -215,7 +215,7 @@ const Seguimiento = () => {
                   />
                 </div>
                 <div className="form-group col-md-3">
-                  <label for="email">Email</label>
+                  <label htmlFor="email">Email</label>
                   <input
                     type="email"
                     className="form-control border-0"
