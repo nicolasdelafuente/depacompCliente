@@ -5,7 +5,14 @@ import { useDispatch } from "react-redux";
 import { obtenerSeguimientoAction } from "../actions/seguimientoActions";
 
 const EntrevistaFila = ({ seguimiento }) => {
-  const { id, fecha, name, motivo, estado, orientador } = seguimiento;
+  const {
+    seguimiento_id,
+    estado_id,
+    entrevista_id,
+    categoria_id,
+    tipo_seguimiento_id,
+    persona_id,
+  } = seguimiento;
 
   const history = useHistory(); // Haboilitar history para redireccion.
   const dispatch = useDispatch();
@@ -14,17 +21,17 @@ const EntrevistaFila = ({ seguimiento }) => {
   const redireccionarSeguimiento = (seguimiento) => {
     dispatch(obtenerSeguimientoAction(seguimiento));
 
-    history.push(`/seguimientos/${seguimiento.id}`);
+    history.push(`/seguimientos/${seguimiento.seguimiento_id}`);
   };
 
   return (
     <tr>
-      <td>{id}</td>
-      <td>{fecha}</td>
-      <td>{name}</td>
-      <td>{motivo}</td>
-      <td>{estado}</td>
-      <td>{orientador}</td>
+      <td>{seguimiento_id}</td>
+      <td>{estado_id}</td>
+      <td>{entrevista_id}</td>
+      <td>{tipo_seguimiento_id}</td>
+      <td>{categoria_id}</td>
+      <td>{persona_id}</td>
       <td>
         <button
           type="button"

@@ -6,7 +6,6 @@ import {
 } from "../types";
 
 import clienteAxios from "../config/axios";
-import seguimientosReducer from "../reducers/seguimientosReducer";
 
 // FUNCIÓN QUE DESCARGA LOS SEGUIMIENTOS DE LA BASE DE DATOS.
 export function listarSeguimientosAction() {
@@ -15,6 +14,7 @@ export function listarSeguimientosAction() {
 
     try {
       const respuesta = await clienteAxios.get("/seguimientos");
+      console.log(respuesta.data.data);
       dispatch(listaSeguimientosExito(respuesta.data.data));
     } catch (error) {
       dispatch(listaSeguimientosError());
