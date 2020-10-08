@@ -14,7 +14,7 @@ const EntrevistaFila = ({ seguimiento }) => {
     persona_id,
   } = seguimiento;
 
-  const history = useHistory(); // Haboilitar history para redireccion.
+  const history = useHistory(); // Habilitar history para redireccion.
   const dispatch = useDispatch();
 
   //funcion que redirige

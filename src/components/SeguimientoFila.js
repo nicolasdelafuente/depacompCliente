@@ -5,9 +5,15 @@ import { useDispatch } from "react-redux";
 import { obtenerSeguimientoAction } from "../actions/seguimientoActions";
 
 const SeguimientoFila = ({ seguimiento }) => {
-  const { id, name, motivo, estado, orientador } = seguimiento;
+  const {
+    seguimiento_id,
+    persona_id,
+    estado_id,
+    motivo_id,
+    orientador_id,
+  } = seguimiento;
 
-  const history = useHistory(); // Haboilitar history para redireccion.
+  const history = useHistory(); // Habilitar history para redireccion.
   const dispatch = useDispatch();
 
   //funcion que redirige
@@ -19,13 +25,12 @@ const SeguimientoFila = ({ seguimiento }) => {
 
   return (
     <tr>
-      <td>{id}</td>
-      <td>{name}</td>
-      <td>{motivo}</td>
-      <td>{estado}</td>
-      <td>{orientador}</td>
+      <td>{seguimiento_id}</td>
+      <td>{persona_id}</td>
+      <td>{motivo_id}</td>
+      <td>{estado_id}</td>
+      <td>{orientador_id}</td>
       <td>
-        {" "}
         <button
           type="button"
           onClick={() => redireccionarSeguimiento(seguimiento)}

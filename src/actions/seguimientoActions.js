@@ -14,8 +14,7 @@ export function listarSeguimientosAction() {
 
     try {
       const respuesta = await clienteAxios.get("/seguimientos");
-      console.log(respuesta.data.data);
-      dispatch(listaSeguimientosExito(respuesta.data.data));
+      dispatch(listaSeguimientosExito(respuesta.data));
     } catch (error) {
       dispatch(listaSeguimientosError());
       console.log(error);
