@@ -14,7 +14,7 @@ const Entrevistas = () => {
     cargarSeguimientos();
   });
 
-  //Obtener ek¡l state
+  //Obtener el state
   const seguimientos = useSelector((state) => state.seguimientos.seguimientos);
   const error = useSelector((state) => state.seguimientos.error);
   const cargando = useSelector((state) => state.seguimientos.cargando);

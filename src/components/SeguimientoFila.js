@@ -19,16 +19,17 @@ const SeguimientoFila = ({ seguimiento }) => {
   //funcion que redirige
   const redireccionarSeguimiento = (seguimiento) => {
     dispatch(obtenerSeguimientoAction(seguimiento));
-
     history.push(`/seguimientos/${seguimiento.id}`);
   };
-
+  console.log(seguimiento.estados == null);
+  console.log(Object.keys(seguimiento));
+  //console.log(seguimiento.estados.estado_tipo);
   return (
     <tr>
       <td>{seguimiento_id}</td>
       <td>{persona_id}</td>
       <td>{motivo_id}</td>
-      <td>{estado_id}</td>
+      <td>{motivo_id}</td>
       <td>{orientador_id}</td>
       <td>
         <button

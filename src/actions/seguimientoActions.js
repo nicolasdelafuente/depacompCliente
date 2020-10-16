@@ -11,9 +11,9 @@ import clienteAxios from "../config/axios";
 export function listarSeguimientosAction() {
   return async (dispatch) => {
     dispatch(listarSeguimientos());
-
     try {
       const respuesta = await clienteAxios.get("/seguimientos");
+      console.log(respuesta);
       dispatch(listaSeguimientosExito(respuesta.data));
     } catch (error) {
       dispatch(listaSeguimientosError());
