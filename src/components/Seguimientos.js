@@ -35,12 +35,13 @@ const Seguimientos = () => {
         <table className="table table-hover text-center">
           <thead className="thead-light">
             <tr>
+              <th scope="col"></th>
               <th scope="col">Seguimiento</th>
               <th scope="col">Nombre</th>
               <th scope="col">Motivo</th>
               <th scope="col">Estado</th>
               <th scope="col">Orientador</th>
-              <th scope="col">Ver</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>

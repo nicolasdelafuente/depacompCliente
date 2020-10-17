@@ -16,7 +16,7 @@ const Seguimiento = () => {
   const {
     id,
     fecha,
-    name,
+
     motivo,
     estado,
     orientador,
@@ -38,7 +38,7 @@ const Seguimiento = () => {
                 aria-controls="collapseExample"
               >
                 <div className="col-xs-9 p-0">
-                  <h4>{name}</h4>
+                  <h4>{seguimiento.personas.persona_nombre}</h4>
                 </div>
               </a>
               <div className="col-xs-3 pl-4 pt-2 mr-3 text-right border-left border-secondary">
@@ -114,7 +114,7 @@ const Seguimiento = () => {
                 aria-controls="collapseExample2"
               >
                 <div className="col-xs-9 p-0">
-                  <h4>Seguimiento {id}</h4>
+                  <h4>Seguimiento: {seguimiento.seguimiento_id}</h4>
                 </div>
               </a>
               <div className="col-xs-3 pl-4 pt-2 mr-3 text-right border-left border-secondary">
@@ -233,11 +233,8 @@ const Seguimiento = () => {
             <h5>Motivo</h5>
           </div>
           <div className="form-group ml-2 mr-2">
-            <textarea className="form-control" id="" rows="5">
-              Se retiró en 1991, dejando atrás 19 años como uno de los más
-              grandes símbolos del fútbol a nivel mundial, en una carrera donde
-              jugó 714 partidos, metió 108 goles y si bien no hay estadísticas
-              oficiales, se estima que realizó más de 200 pases-gol.
+            <textarea className="form-control" id="" rows="5" disabled>
+              {seguimiento.seguimiento_motivo}
             </textarea>
           </div>
         </div>
