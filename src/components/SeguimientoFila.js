@@ -20,16 +20,12 @@ const SeguimientoFila = ({ seguimiento }) => {
   return (
     <tr>
       <td>
-        <div
+        <i
+          class="fas fa-grip-lines-vertical"
           style={{
-            background: `${seguimiento.estados.color}`,
-            width: 9,
-            borderRadius: 7,
-            padding: 0,
+            color: `${seguimiento.estados.color}`,
           }}
-        >
-          &nbsp;
-        </div>
+        ></i>
       </td>
       <td>{seguimiento.seguimiento_id}</td>
       <td>{seguimiento.personas.persona_nombre}</td>
