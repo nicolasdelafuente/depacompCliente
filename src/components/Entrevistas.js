@@ -12,7 +12,7 @@ const Entrevistas = () => {
     //Consultar la API.
     const cargarSeguimientos = () => dispatch(listarSeguimientosAction());
     cargarSeguimientos();
-  });
+  }, []);
 
   //Obtener el state
   const seguimientos = useSelector((state) => state.seguimientos.seguimientos);
